@@ -36,6 +36,10 @@ app.use('/api/health', healthRoutes);
 app.use('/api/menu', menuRoutes);
 app.use('/api/chat', chatRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Service is running...');
+});
+
 // --- Error Handling ---
 app.use(notFound);
 app.use(errorHandler);

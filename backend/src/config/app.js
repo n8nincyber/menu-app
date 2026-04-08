@@ -36,7 +36,7 @@ app.use('/api/health', healthRoutes);
 app.use('/api/menu', menuRoutes);
 app.use('/api/chat', chatRoutes);
 
-app.get('/', (req, res) => {
+app.get('/api/', (req, res) => {
   res.send('Service is running...');
 });
 
